@@ -81,3 +81,64 @@ ChatGPT
 > If anything else like that comes up or feels confusing, you can ask.
 
 :+1:
+
+ChatGPT
+> Yes—but it depends on *what kind of file you’re talking about in GitHub.*
+
+> ### 1. Hard limit (normal Git files)
+>
+> GitHub has a **strict per-file limit of 100 MB** for files stored directly in a repository.
+>
+> * If you try to push a file larger than that → the push is **rejected**
+> * You’ll get an error saying it exceeds the limit ([FileSize.org][1])
+>
+> So:
+>
+> > **100 MB = absolute max for regular Git tracking**
+
+---
+
+> ### 2. Warning zone (before 100 MB)
+>
+> * Around **50 MB+**, GitHub starts warning you that the file is large
+> * It *may still allow it*, but it’s discouraged because it slows down cloning and syncing
+
+---
+
+> ### 3. Bigger files (Git LFS)
+>
+> If you use **Git Large File Storage (LFS)**:
+>
+> * You can store files up to **2–5 GB per file** depending on plan ([GitHub Docs][2]) ([GitHub Docs][3])
+>
+> But important detail:
+>
+> * The file is not stored normally in Git
+> * Git stores a small “pointer,” and the real file is handled separately
+
+---
+
+> ### 4. Repo size limits (separate from file size)
+>
+> Even if individual files are fine, repositories themselves can also get too large:
+>
+> * Recommended: ~1 GB range
+> * Hard limits vary depending on platform/settings (often several GB before issues)
+
+---
+
+> ### Simple summary
+>
+> * Normal file in repo: **max 100 MB**
+> * Git LFS file: **up to ~2–5 GB**
+> * Too many large files = repo gets slow and harder to manage
+
+---
+
+> If you want, I can also explain *why Git has that 100 MB limit in the first place*—it’s actually tied to how Git stores history, not just “arbitrary rules.”
+
+[1]: https://filesize.org/limits/github/?utm_source=chatgpt.com "GitHub File Size Limits 2026 - Repository & Upload Limits | FileSize.org"
+[2]: https://docs.github.com/repositories/working-with-files/managing-large-files/about-git-large-file-storage?utm_source=chatgpt.com "About Git Large File Storage - GitHub Docs"
+[3]: https://docs.github.com/enterprise-server/repositories/working-with-files/managing-large-files/about-git-large-file-storage?utm_source=chatgpt.com "About Git Large File Storage - GitHub Enterprise Server 3.20 Docs"
+
++:1+
