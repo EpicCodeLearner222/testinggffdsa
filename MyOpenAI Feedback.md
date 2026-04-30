@@ -67,3 +67,11 @@ ChatGPT
 Feedback:
 
 :+1:
+
+ChatGPT
+> You’re welcome.
+> If you’ve got more questions or need help figuring something out, just say it.
+
+Feedback:
+
+:+1:
