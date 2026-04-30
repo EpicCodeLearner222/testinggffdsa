@@ -75,3 +75,9 @@ ChatGPT
 Feedback:
 
 :+1:
+
+ChatGPT
+> You’re welcome.
+> If anything else like that comes up or feels confusing, you can ask.
+
+:+1:
